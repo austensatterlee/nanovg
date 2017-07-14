@@ -254,6 +254,9 @@ extern NVG_EXPORT void nvgReset(NVGcontext* ctx);
 //
 // Current render style can be saved and restored using nvgSave() and nvgRestore().
 
+// Sets whether to draw antialias for nvgStroke() and nvgFill(). It's enabled by default.
+void nvgShapeAntiAlias(NVGcontext* ctx, int enabled);
+
 // Sets current stroke style to a solid color.
 extern NVG_EXPORT void nvgStrokeColor(NVGcontext* ctx, NVGcolor color);
 
